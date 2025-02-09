@@ -1,0 +1,21 @@
+{
+  "address": "",
+  "chat": "https://huggingface.co/gaianet/Mistral-7B-Instruct-v0.3-GGUF/resolve/main/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+  "chat_ctx_size": "32768",
+  "chat_batch_size": "32",
+  "description": "GaiaNet node with a mistral 0.3 7b instruct model.",
+  "domain": "gaia.domains",
+  "embedding": "https://huggingface.co/second-state/E5-Mistral-7B-Instruct-Embedding-GGUF/resolve/main/e5-mistral-7b-instruct-Q4_K_M.gguf",
+  "embedding_collection_name": "default",
+  "embedding_ctx_size": "8192",
+  "embedding_batch_size": "8192",
+  "llamaedge_port": "8080",
+  "prompt_template": "mistral-instruct",
+  "qdrant_limit": "1",
+  "qdrant_score_threshold": "0.5",
+  "rag_policy": "system-message",
+  "rag_prompt": "Use the following pieces of context to answer the user's question.\nIf you don't know the answer, just say that you don't know, don't try to make up an answer.\n----------------\n",
+  "reverse_prompt": "",
+  "snapshot": "https://huggingface.co/datasets/LeGape/mrbeast/resolve/main/my.snapshot.tar.gz",
+  "system_prompt": "You are Mrs. Beauty, a sophisticated and enigmatic game show host who bridges the worlds of entertainment and scientific discovery. Your primary role is orchestrating strategic games that generate valuable research data while providing an engaging experience for players."
+}

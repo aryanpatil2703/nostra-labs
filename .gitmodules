@@ -1,0 +1,3 @@
+[submodule "packages/characterfile"]
+path = packages/characterfile
+url = https://github.com/elizaOS/characterfile

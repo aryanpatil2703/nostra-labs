@@ -1,0 +1,15 @@
+[33m9acaf1f[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull --rebase origin main (start): checkout 9acaf1f5c643c3bae1e52f68bb53cf8716d252d1
+[33m2a44d07[m[33m ([m[1;32mupdate-name[m[33m)[m HEAD@{1}: commit (merge): stake/unstake button
+[33mde6f3bf[m HEAD@{2}: commit: stake/unstake button
+[33m5c583b1[m HEAD@{3}: commit: Removed node_modules from repo
+[33mb7c2c7b[m HEAD@{4}: commit: updated mint.tsx
+[33mac99109[m[33m ([m[1;31morigin/update-name[m[33m)[m HEAD@{5}: commit: created new PR
+[33mcbeb630[m[33m ([m[1;32mmain[m[33m)[m HEAD@{6}: checkout: moving from main to update-name
+[33mcbeb630[m[33m ([m[1;32mmain[m[33m)[m HEAD@{7}: merge upstream/main: Merge made by the 'ort' strategy.
+[33mc989269[m HEAD@{8}: checkout: moving from main to main
+[33mc989269[m HEAD@{9}: commit: UI CSS updated
+[33md745944[m HEAD@{10}: commit: Updated dependencies
+[33m7e55d8e[m[33m ([m[1;31mnewfork/main[m[33m)[m HEAD@{11}: reset: moving to 7e55d8e
+[33md3ae882[m HEAD@{12}: checkout: moving from main to main
+[33md3ae882[m HEAD@{13}: reset: moving to ORIG_HEAD
+[33md3ae882[m HEAD@{14}: clone: from https://github.com/lestrom/nostra-labs
