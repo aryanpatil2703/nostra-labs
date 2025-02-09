@@ -149,53 +149,55 @@ export default function StakeUnstake() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-5 p-4">
-      <h2 className="text-2xl font-bold">Stake / Unstake Tokens</h2>
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5 p-4">
       {userAddress ? (
-        <>
-          <div className="text-lg p-2 rounded-lg bg-violet-300">
-            <p>Token Balance: {formatEther(tokenBalance)} NST</p>
-            <p>Available to Unstake: {formatEther(availableStakes)} NST</p>
-          </div>
+      <>
+        <h2 className="text-2xl font-bold">Stake / Unstake Tokens</h2>
+        
+          
+            <div className="text-lg p-2 rounded-lg bg-violet-300">
+              <p>Token Balance: {formatEther(tokenBalance)} NST</p>
+              <p>Available to Unstake: {formatEther(availableStakes)} NST</p>
+            </div>
 
-          {/* Input field for user to enter stake amount */}
-          <div className="mt-2">
-            <input
-              type="number"
-              placeholder="Enter amount to stake"
-              value={stakeAmount}
-              onChange={(e) => setStakeAmount(e.target.value)}
-              className="border p-2 rounded-lg text-xl"
-            />
-          </div>
+            {/* Input field for user to enter stake amount */}
+            <div className="mt-2">
+              <input
+                type="number"
+                placeholder="Enter amount to stake"
+                value={stakeAmount}
+                onChange={(e) => setStakeAmount(e.target.value)}
+                className="border p-2 rounded-lg text-xl"
+              />
+            </div>
 
-          {/* Approve, Stake, and Unstake Buttons */}
-          <div className="flex gap-4 mt-4">
-            <Button
-              onClick={handleApprove}
-              disabled={isStaking}
-              className="bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-2"
-            >
-              Approve
-            </Button>
-            <Button
-              onClick={handleStake}
-              disabled={isStaking || getBigInt(tokenBalance) === BigInt(0)}
-              className="bg-green-500 hover:bg-green-600 text-white rounded-lg px-4 py-2"
-            >
-              {isStaking ? "Staking..." : "Stake"}
-            </Button>
-            <Button
-              onClick={handleUnstake}
-              disabled={isUnstaking || getBigInt(availableStakes) === BigInt(0)}
-              className="bg-red-500 hover:bg-red-600 text-white rounded-lg px-4 py-2"
-            >
-              {isUnstaking ? "Unstaking..." : "Unstake"}
-            </Button>
-          </div>
+            {/* Approve, Stake, and Unstake Buttons */}
+            <div className="flex gap-4 mt-4">
+              <Button
+                onClick={handleApprove}
+                disabled={isStaking}
+                className="bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-2"
+              >
+                Approve
+              </Button>
+              <Button
+                onClick={handleStake}
+                disabled={isStaking || getBigInt(tokenBalance) === BigInt(0)}
+                className="bg-green-500 hover:bg-green-600 text-white rounded-lg px-4 py-2"
+              >
+                {isStaking ? "Staking..." : "Stake"}
+              </Button>
+              <Button
+                onClick={handleUnstake}
+                disabled={isUnstaking || getBigInt(availableStakes) === BigInt(0)}
+                className="bg-red-500 hover:bg-red-600 text-white rounded-lg px-4 py-2"
+              >
+                {isUnstaking ? "Unstaking..." : "Unstake"}
+              </Button>
+            </div>
         </>
       ) : (
-        <p className="text-lg">Please connect your wallet.</p>
+        <p>Please connect your wallet to stake or unstake tokens.</p>
       )}
     </div>
   );
